@@ -10,16 +10,16 @@ Build with JDK 17 and Maven 3.8.6 on Windows 10
 
 #### Testing:
 
-Create a new account \
+Create a new account  
 `curl -X POST http://localhost:8080/create`
 
-Add a transaction to account #1 of 101.00\ 
+Add a transaction to account #1 of 101.00  
 `curl -H "Content-Type: application/json" -X POST localhost:8080/transaction/add/1 -d 101`
 
-Get the balance of account #1\
+Get the balance of account #1  
 `curl -X GET localhost:8080/balance/1`
 
-List 10 latest transactions of account #1
+List 10 latest transactions of account #1  
 `curl -X GET localhost:8080/transaction/list/1`
 
 ### TODO'S
